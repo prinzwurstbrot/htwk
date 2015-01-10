@@ -5,12 +5,17 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <Canvas fx:id="canvas" height="460.0" layoutX="70.0" layoutY="51.0" width="460.0" />
-      <Button layoutX="329.0" layoutY="558.0" mnemonicParsing="false" onAction="#plot" prefHeight="25.0" prefWidth="133.0" text="Funktion Anzeigen" />
-      <Button layoutX="489.0" layoutY="558.0" mnemonicParsing="false" onAction="#clear" text="Clear" />
-      <TextField fx:id="input" layoutX="65.0" layoutY="558.0" />
-      <Label layoutX="65.0" layoutY="530.0" text="Funktion eingeben " />
+      <Canvas fx:id="canvas" height="660.0" layoutX="20.0" layoutY="20.0" width="660.0" />
+      <Button layoutX="449.0" layoutY="724.0" mnemonicParsing="false" onAction="#plot" prefHeight="25.0" prefWidth="133.0" text="Funktion Anzeigen" />
+      <Button layoutX="609.0" layoutY="725.0" mnemonicParsing="false" onAction="#clear" text="Clear" />
+      <TextField fx:id="input" layoutX="32.0" layoutY="724.0" prefHeight="25.0" prefWidth="133.0" promptText="Form : mx+n" text="x + 5" />
+      <Label fx:id="response" layoutX="215.0" layoutY="700.0" text="Interval eingeben" />
+      <Label layoutX="32.0" layoutY="700.0" text="Funktion eingeben " />
+      <TextField layoutX="245.0" layoutY="725.0" prefHeight="25.0" prefWidth="43.0" text="-5" fx:id="xMin" />
+      <TextField layoutX="322.0" layoutY="725.0" prefHeight="25.0" prefWidth="43.0" text="5" fx:id="xMax" />
+      <Label layoutX="215.0" layoutY="729.0" text="Min : " />
+      <Label layoutX="292.0" layoutY="729.0" text="Max : " />
    </children>
 </Pane>
